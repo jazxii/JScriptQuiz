@@ -1,0 +1,68 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('bg.jpg');
+    min-height: 100%;
+     background-position: center;
+     background-size: cover;
+
+}
+header{
+    background-color: rgb(0, 0, 0);
+    font-size: xx-large;
+    color: cornsilk;
+    height: 100px;
+    min-width: 100%;
+}
+#question{    
+border-radius:32px;
+float:center;
+background-color:#fdf5e6;
+margin-bottom: 2em;
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: xx-large;
+min-height: 100px;
+width: 1200px;
+
+}
+
+#option1,#option2,#option3,#option4{
+    min-height: 50px;
+    text-align: center;
+    font-size: larger;
+    min-width: 100px;
+}
+#Options {
+    border: none;
+    float:left;
+    margin-left: 1em;
+    color: cornsilk;
+    background-color: black;
+    font-size: 20px  ;
+    min-height: 120px;
+    width: 350px;
+}
+button:hover{color:#000!important;background-color:#ccc!important}
+
+}
+a{
+    text-decoration: none;
+}
+
+#nextt{
+    align-content: center;
+    float: none;
+    text-align: center;
+    height:30px;
+    font-size: xx-large;
+}
+#buttns{
+    text-decoration:none;
+    font-size:larger;
+    margin-right: 1em;
+
+}
+
+#stopp{
+    text-decoration: none;
+    color:black;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+
+            var Q1="1.Under animal kingdom, elephant comes under which order";
+            var Q2="2.How many species of elephants survive on Earth today";
+            var Q3="3.What are the current estimated numbers of African elephants";
+            var Q4="4.What are the current estimated numbers of Asian elephants";
+            var Q5="5.How many countries in Asia(including India) have asian elephants in the wild";
+            var Q6="6.Elephant skin is having the thickness of(in inches)";
+            var Q7="7.How many muscles are there in the trunk of an elephant";
+            var Q8="8.Elephants have sweat glands only at";
+            var Q9="9.Why do elephants flap their ears";
+            var Q10="10.Elephants tusks are the modified ";
+            var Q11="11.How many sets of molar teeth does an elephant have durig its entire lifetime";
+            var Q12="12.How much litres of water does an adult elephant require per day";
+            var Q13="13.How much quantity of food does an adult wild elephant require per day(in KG)";
+            var Q14="14.On what sense do elephants depend more for their daily activities";
+            var Q15="15.Elephant(6000kg) has the largest brain among land mammals. What is the average weight or size of an adult elephant's brain(in kg)";
+            var Q16="16.Elephant communicate long distance by sensing (sound)";
+            var Q17="17.Gestation period of Asian elephant is (in months) ";
+            var A1="Proboscidea" ;
+            var B1="Cetacea";
+            var C1="Dermotera";
+            var D1="Hyracoidae";
+            var A2="2";
+            var B2="3";
+            var C2="4";
+            var D2="5";
+            var A3="300000";
+            var B3="150000";
+            var C3="600000";
+            var D3="450000";
+            var C4="50000";
+            var B4="75000";
+            var A4="25000";
+            var D4="100000";
+            var B5="13";
+            var A5="10";
+            var C5="7";
+            var D5="15";
+            var D6="1.5";
+            var B6="2";
+            var C6="2.5";
+            var A6="1.25";
+            var A7="100000";
+            var B7="150000";
+            var C7="5000";
+            var D7="10000";
+            var A8="over the nails";
+            var B8="under skin";
+            var C8="Above the trunk";
+            var D8="Side of ears";
+            var C9="To regulate body temperature";
+            var B9="Express happiness";
+            var A9="During Violent mood";
+            var D9="During courtship ";
+            var B10="Incisor teeth";
+            var A10="Premolar teeth";
+            var C10="Molar teeth";
+            var D10="Upper jaw";
+            var D11="6";
+            var B11="8";
+            var C11="4";
+            var A11="5";
+            var C12="250";
+            var B12="200";
+            var A12="350";
+            var D12="400";
+            var A13="200";
+            var B13="150";
+            var C13="250";
+            var D13="300";
+            var B14="Smell";
+            var A14="Vision";
+            var C14="Hearing";
+            var D14="Common Sense";
+            var C15="4";
+            var B15="3";
+            var A15="6";
+            var D15="8";
+            var D16="Infra Sonic";
+            var B16="Ultra Sonic";
+            var C16="Super Sonic";
+            var A16="Hyper Sonic";
+            var D17="22";
+            var B17="12";
+            var C17="24";
+            var A17="18";
+            var Qs=[Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,Q17];
+            var EA=[A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16,A17];
+            var EB=[B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11,B12,B13,B14,B15,B16,B17];
+            var EC=[C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17];
+            var ED=[D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17];   
+            var CO=[A1,B2,D3,C4,B5,D6,A7,A8,C9,B10,D11,C12,A13,B14,C15,D16,D17];
+            var i = 0;
+                var Wno=0;
+                var Cno=0;
+                
+            function start(){
+                document.getElementById('qst').innerText= Qs[i];
+                document.getElementById('opt1').innerHTML= EA[i];
+                document.getElementById('opt2').innerHTML= EB[i];
+                document.getElementById('opt3').innerHTML= EC[i];
+                document.getElementById('opt4').innerHTML= ED[i];
+               
+
+            }
+            function nxt(){
+                if(i<16){
+                    i++;
+             document.getElementById('qst').innerText= Qs[i];
+             document.getElementById('opt1').innerHTML= EA[i];
+             document.getElementById('opt2').innerHTML= EB[i];
+             document.getElementById('opt3').innerHTML= EC[i];
+             document.getElementById('opt4').innerHTML= ED[i];
+                }
+                else{
+                   final(); 
+                }
+            
+              }
+            
+function final(){
+    //alert("Score:"+Cno+"/17"+"\n"+"Wrong:"+Wno);
+             document.getElementById('qst').innerText= "Exam Finished";
+             document.getElementById('opt1').innerHTML= "Score:"+Cno+"/17";
+             document.getElementById('opt2').innerHTML="Wrong:"+(17-Cno);
+             //document.getElementById('opt3').innerHTML= "";
+             //document.getElementById('opt4').innerHTML= "";
+             document.getElementById("option3").style.display="none";
+             document.getElementById("option4").style.display="none";
+
+}
+            function click1(){
+               if(i<17){
+                    if(i==0||i==6||i==7||i==12){
+                        corrt();
+                    }
+                    else{
+                        wrng();
+                    }
+
+               }
+               else{
+                   final();
+               }
+            }
+            function click2(){
+               if(i<16){
+                    if(i==1||i==4||i==9||i==13){
+                        corrt();
+                    }
+                    else{
+                        wrng();
+                    }
+               }
+               else{
+                   final();
+               }
+            }
+            function click3(){
+               if(i<16){
+                    if(i==3||i==8||i==11||i==14){
+                        corrt();
+                    }
+                    else{
+                        wrng();
+                    }
+               }
+               else{
+                   final();
+                   
+               }
+            }
+            
+            function click4(){
+               if(i<16){
+                    if(i==2||i==5||i==10||i==15||i==16){
+                        corrt();
+                    }
+                    else{
+                        wrng();
+                    }
+               }
+               else if(i==16){
+                   Cno=Cno+1;
+                   i++;
+                    nxt();
+                    
+               }
+               
+            }
+            
+
+
+            function corrt(){
+                //alert ("Answer is correct!!");
+                Cno=Cno+1;
+                nxt();
+
+        }
+           
+
+            function wrng(){
+                //alert ("Answer is Wrong.Correct answer is optionA");
+                Wno=Wno+1;
+                nxt();
+        }
+            
+            
+        </script>
+        <link rel="stylesheet" href="toms.css">
+        <title>Quiz Forest</title></head>
+    <body onload="start()">
+        <header align="center">
+            <h2>Forest Quiz</h2>
+        </header>
+        <br><br>
+        <div id="body">
+            <center>
+            <div id="question"><center>
+                <a id="qst"> </a>
+            </div>
+            <div id="option1">
+                <button id="Options"onclick="click1()">
+                    <a id="opt1"> </a>
+                </button>
+            </div>
+            <div id="option2">
+                <button id="Options" onclick="click2()">
+                    <a id="opt2"> </a>
+                </button>
+            </div>
+            <div id="option3">
+                <button id="Options" onclick="click3()">
+                    <a id="opt3"> </a>
+                </button>
+            </div>
+            <div id="option4">
+                <button id="Options" onclick="click4()">
+                    <a id="opt4"> </a>
+                </button>
+                <br>
+                <center>
+                </div>
+            <div id="nextt" >
+            <button id="buttns"onclick="nxt()"><a>SKIP</a></button>
+            <button id="buttns"><a id="stopp" href="index.html">STOP THE EXAM</a></button>
+            </div></center>
+        </div>
+    </body>
+</html>
